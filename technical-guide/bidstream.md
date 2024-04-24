@@ -9,4 +9,4 @@ The **eids** object should consist of the following parameters:
 -   id: the tokenized value of the **xID** Identifier | atype: 3
 -   id: the tokenized value of the **ltid** Identifier | atype: 1
 
-Proper Prebi
+Proper Prebid.js User ID Submodule will be provided after the certification process finishes. The module will provide methods for passing xID value directly or provide Cookie / Local Storage name to read the xID value from. The decision to pass the xID value directly or specify a Cookie/Local Storage name for reading the xID value is at the discretion of the integrator. This provides flexibility in how the integration is implemented based on specific use cases or technical requirements.
