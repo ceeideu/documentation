@@ -1,0 +1,28 @@
+[
+  {
+    "text": "Introduction",
+    "collapsed": false,
+    "items": [
+      { "text": "Overview", "link": "/overview" },
+      { "text": "Glossary", "link": "/glossary" }
+    ]
+  },
+  {
+    "text": "XID generation",
+    "collapsed": false,
+    "items": [
+      { "text": "How to integrate?", "link": "/how-to-integrate" },
+      { "text": "Generating XID", "link": "/generating-xid" },
+      { "text": "Regenerating XID", "link": "/regenerating-xid" },
+      { "text": "Properties", "link": "/properties" }
+    ]
+  },
+  {
+    "text": "Tokenisation",
+    "collapsed": false,
+    "items": [
+      { "text": "Tokenisation", "link": "/tokenisation" },
+      { "text": "Bidstream integration", "link": "/bidstream" }
+    ]
+  }
+]
