@@ -1,6 +1,10 @@
 # Contributing
 Below you'll find a set of guidelines for how to contribute to this documentation.
 
+### Technologies used
+All the documentation is written in Markdown.
+To generate a static website based on these files, we are using [VitePress](https://vitepress.dev/) with few customizations.
+
 ### Installation
 #### Prerequisites
 - Node.js version 18 or higher.
