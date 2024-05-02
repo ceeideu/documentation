@@ -21,7 +21,7 @@ export default defineConfig({
     ],
 
     versionSwitcher: {
-      currentVersion: latestVersion,
+      latestVersion: latestVersion,
       versions: getVersionSwitchMenu(),
     },
 
@@ -44,8 +44,8 @@ export default defineConfig({
       md.use(markdownItReplaceLink);
     },
     replaceLink: (link) => {
-      if (link.match(/^\/?current\/?$/)) return latestVersionEntrypoint;
-      if (link.match(/^\/?current\//)) return link.replace('/latest/', `/${latestVersion}/`);
+      if (link.match(/^\/?latest\/?$/)) return latestVersionEntrypoint;
+      if (link.match(/^\/?latest\//)) return link.replace('/latest/', `/${latestVersion}/`);
       return link;
     },
   },

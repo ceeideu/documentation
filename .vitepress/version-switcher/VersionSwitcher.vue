@@ -6,17 +6,17 @@ import { reactive, ref, watch } from 'vue';
 const { theme, page } = useData();
 const config = theme.value.versionSwitcher;
 
-const currentVersion = ref(config.currentVersion);
+const latestVersion = ref(config.latestVersion);
 const versions = config.versions.map((item) => item.text);
 
 watch(() => page.value.relativePath, (path) => {
   const matchedVersion = versions.find((version) => path.startsWith(version));
   if (!matchedVersion) return;
-  currentVersion.value = matchedVersion;
+  latestVersion.value = matchedVersion;
 }, { immediate: true });
 
 const item = reactive({
-  text: currentVersion,
+  text: latestVersion,
   items: [
     {
       text: 'Versions',

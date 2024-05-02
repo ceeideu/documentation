@@ -20,10 +20,10 @@ export default {
           return siteData.value.themeConfig;
         },
       },
-      $currentVersion: {
+      $latestVersion: {
         get() {
           const config = siteData.value.themeConfig;
-          return config.versionSwitcher.currentVersion;
+          return config.versionSwitcher.latestVersion;
         },
       },
     });
