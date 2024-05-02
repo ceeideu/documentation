@@ -6,6 +6,10 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  },
   "devDependencies": {
     "@types/node": "20.12.7",
     "@types/semver": "7.5.8",
