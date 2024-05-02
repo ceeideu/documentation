@@ -32,9 +32,11 @@ export default defineConfig({
 
     lastUpdated: true,
 
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ]
+    logo: '/logo.svg',
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/pirwppl' },
+    ],
   },
   markdown: {
     config: (md) => {
