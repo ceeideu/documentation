@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 import { getCurrentVersion, getVersionsSidebars, getVersionEntrypoint, getVersionSwitchMenu } from './version-switcher/index.mts';
 import { fileURLToPath, URL } from 'node:url';
 import markdownItReplaceLink from 'markdown-it-replace-link';
@@ -53,9 +53,9 @@ export default defineConfig({
           find: /^.*\/VPNavBarMenu\.vue$/,
           replacement: fileURLToPath(
             new URL('./theme/overridden-components/OverriddenVPNavBarMenu.vue', import.meta.url)
-          )
-        }
-      ]
-    }
-  }
-})
+          ),
+        },
+      ],
+    },
+  },
+});
