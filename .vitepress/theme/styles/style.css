@@ -45,6 +45,8 @@
   @mixin text-color-light;
 
   --vp-c-divider: var(--vp-c-text-3);
+  --vp-c-border: #3c3f44;
+  --vp-input-border-color: var(--vp-c-border);
 
   background-color: var(--vp-nav-bg-color) !important;
 
@@ -73,6 +75,12 @@
   }
 
   .VPNavBarSearch {
+    --vp-c-divider: #e2e2e3;
+
+    .dark & {
+      --vp-c-divider: #2e2e32;
+    }
+
     @media (min-width: var(--breakpoint-md)) {
       @mixin restore-default-text-color;
     }
