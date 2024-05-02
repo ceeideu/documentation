@@ -55,7 +55,7 @@ export default defineConfig({
         {
           find: /^.*\/VPNavBarMenu\.vue$/,
           replacement: fileURLToPath(
-            new URL('./theme/overridden-components/OverriddenVPNavBarMenu.vue', import.meta.url)
+            new URL('./theme/components/overridden/OverriddenVPNavBarMenu.vue', import.meta.url)
           ),
         },
       ],

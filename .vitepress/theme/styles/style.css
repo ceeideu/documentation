@@ -1,9 +1,12 @@
+@import "breakpoints.css";
+@import "mixins.css";
+
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
-/* Custom CSS variables */
+/* Custom variables */
 :root {
   --color-accent-1: #ED9A63;
   --color-accent-2: #ec9d6a;
@@ -17,6 +20,8 @@
   --color-text-always-dark-1: rgba(60, 60, 67);
   --color-text-always-dark-2: rgba(60, 60, 67, 0.78);
   --color-text-always-dark-3: rgba(60, 60, 67, 0.56);
+
+  --content-width: 688px;
 }
 
 
@@ -32,35 +37,14 @@
   --vp-nav-bg-color: #151a42;
 }
 
-
-/* Mixins */
-@define-mixin text-color-light {
-  --vp-c-text-1: var(--color-text-always-light-1);
-  --vp-c-text-2: var(--color-text-always-light-2);
-  --vp-c-text-3: var(--color-text-always-light-3);
-}
-
-@define-mixin text-color-dark {
-  --vp-c-text-1: var(--color-text-always-dark-1);
-  --vp-c-text-2: var(--color-text-always-dark-2);
-  --vp-c-text-3: var(--color-text-always-dark-3);
-}
-
-@define-mixin restore-default-text-color {
-  @mixin text-color-dark;
-
-  .dark & {
-    @mixin text-color-light;
-  }
-}
-
-
 /**
  * Component: Nav
  * -------------------------------------------------------------------------- */
 
 .VPNavBar {
   @mixin text-color-light;
+
+  --vp-c-divider: var(--vp-c-text-3);
 
   background-color: var(--vp-nav-bg-color) !important;
 
@@ -89,7 +73,7 @@
   }
 
   .VPNavBarSearch {
-    @media (min-width: 768px) {
+    @media (min-width: var(--breakpoint-md)) {
       @mixin restore-default-text-color;
     }
   }
@@ -102,17 +86,19 @@
   }
 }
 
+
 /**
- * Component: VPSidebarItem
+ * Component: VPSidebar
  * -------------------------------------------------------------------------- */
 
-.VPSidebarItem {
-  &.level-1 {
-    padding-left: 1rem;
+.VPSidebar {
+  .VPSidebarItem {
+    &.level-1 {
+      padding-left: 1rem;
 
-    &.is-active > .item > .indicator {
-      background-color: var(--vp-c-brand-1);
+      &.is-active > .item > .indicator {
+        background-color: var(--vp-c-brand-1);
+      }
     }
   }
 }
-

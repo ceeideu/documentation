@@ -3,7 +3,7 @@
 import { useData } from 'vitepress';
 import VPNavBarMenuLink from 'vitepress/dist/client/theme-default/components/VPNavBarMenuLink.vue';
 import VPNavBarMenuGroup from 'vitepress/dist/client/theme-default/components/VPNavBarMenuGroup.vue';
-import VersionSwitcher from '../../version-switcher/VersionSwitcher.vue';
+import VersionSwitcher from '../../../version-switcher/VersionSwitcher.vue';
 
 const { theme } = useData();
 </script>
