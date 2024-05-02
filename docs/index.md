@@ -3,18 +3,18 @@
 ![img.png](img.png)
 
 ## [What is PIR?](what-is-pir.md)
-## [Technical Guide](/current)
+## [Technical Guide](/latest)
 ### Introduction
-- [Overview](/current/overview.md)
-- [Glossary](/current/glossary.md)
+- [Overview](/latest/overview.md)
+- [Glossary](/latest/glossary.md)
 
 ### XID generation
-- [How to integrate?](/current/how-to-integrate.md)
-- [Generating XID](/current/generating-xid.md)
-- [Regenerating XID](/current/regenerating-xid.md)
-- [Properties](/current/properties.md)
+- [How to integrate?](/latest/how-to-integrate.md)
+- [Generating XID](/latest/generating-xid.md)
+- [Regenerating XID](/latest/regenerating-xid.md)
+- [Properties](/latest/properties.md)
 
 ### Tokenisation
-- [Tokenisation](/current/tokenisation.md)
-- [Bidstream integration](/current/bidstream.md)
+- [Tokenisation](/latest/tokenisation.md)
+- [Bidstream integration](/latest/bidstream.md)
 

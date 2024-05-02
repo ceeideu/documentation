@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress';
-import { getCurrentVersion, getVersionsSidebars, getVersionEntrypoint, getVersionSwitchMenu } from './version-switcher/index.mts';
+import { getLatestVersion, getVersionsSidebars, getVersionEntrypoint, getVersionSwitchMenu } from './version-switcher/index.mts';
 import { fileURLToPath, URL } from 'node:url';
 import markdownItReplaceLink from 'markdown-it-replace-link';
 
-const currentVersion = getCurrentVersion();
-const currentVersionEntrypoint = getVersionEntrypoint(currentVersion);
+const latestVersion = getLatestVersion();
+const latestVersionEntrypoint = getVersionEntrypoint(latestVersion);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -16,12 +16,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Docs', link: currentVersionEntrypoint },
+      { text: 'Docs', link: latestVersionEntrypoint },
       { text: 'API', link: 'https://pir.wp.pl/playground/swagger/index.html#/' },
     ],
 
     versionSwitcher: {
-      currentVersion: currentVersion,
+      currentVersion: latestVersion,
       versions: getVersionSwitchMenu(),
     },
 
@@ -44,8 +44,8 @@ export default defineConfig({
       md.use(markdownItReplaceLink);
     },
     replaceLink: (link) => {
-      if (link.match(/^\/?current\/?$/)) return currentVersionEntrypoint;
-      if (link.match(/^\/?current\//)) return link.replace('/current/', `/${currentVersion}/`);
+      if (link.match(/^\/?current\/?$/)) return latestVersionEntrypoint;
+      if (link.match(/^\/?current\//)) return link.replace('/latest/', `/${latestVersion}/`);
       return link;
     },
   },

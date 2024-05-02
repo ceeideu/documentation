@@ -5,7 +5,7 @@ import { DefaultTheme } from 'vitepress';
 
 const rootDir = path.resolve(__dirname, '..', '..');
 
-export function getCurrentVersion(): string {
+export function getLatestVersion(): string {
   const versions = getVersions();
   return semver.maxSatisfying(versions, '*')!;
 }
