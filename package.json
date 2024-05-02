@@ -1,6 +1,6 @@
 {
-  "name": "vitepress-test",
-  "license": "MIT",
+  "name": "@pirwppl/documentation",
+  "private": "true",
   "scripts": {
     "docs:dev": "nodemon --watch docs -e json --exec 'vitepress dev'",
     "docs:build": "vitepress build",
