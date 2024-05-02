@@ -39,7 +39,13 @@ When linking to the latest version of the documentation, use `/latest`, which wi
 
 
 ### Up and Running
-You can start the development server by running the following command in the root directory of the project:
+All of the following commands should be run in the root directory of the project.
+
+First of all, install all dependencies:
+```bash
+npm install
+```
+Now you can start the development server:
 ```bash
 npm run docs:dev
 ```
