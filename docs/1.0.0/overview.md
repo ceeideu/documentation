@@ -1,7 +1,7 @@
 Overview
 ========
 
-Characteristics of PIR (Polski Identyfikator Reklamowy - Polish Advertising Identifier)
+Characteristics of PIR 
 ---------------------------------------------------------------------------------------
 
 Here are just some of the intended benefits for using **PIR**. You can:

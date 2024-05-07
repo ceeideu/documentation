@@ -13,13 +13,13 @@ How to integrate
 
 The following steps provide a high-level outline of the workflow intended for integration with the service.
 
-Background processes:
+##### Background processes:
 
 -   The Advertiser and/or data provider passes first-party and third-party audience segments to the DSP.
 -   The DSP syncs with the PIR Service to receive decryption keys.
 -   The DSP refreshes PIR identifiers using the PIR Service and upgrades ID Mappings for stored DMP segments.
 
-Steps for each bid/ad impression:
+##### Steps for each bid/ad impression:
 
 1.  A bid request is passed into the bid stream with the PIR ID token.
 2.  The DSP receives the bid request with the PIR ID token from the bid stream.

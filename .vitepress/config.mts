@@ -8,14 +8,14 @@ const latestVersionEntrypoint = getVersionEntrypoint(latestVersion);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Polski Identyfikator Reklamowy (PIR)',
+  title: 'CEEID',
   rewrites: {
     'docs/:page+': ':page+',
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      // { text: 'Home', link: latestVersionEntrypoint },
       { text: 'Docs', link: latestVersionEntrypoint },
       { text: 'API', link: 'https://pir.wp.pl/playground/swagger/index.html#/' },
     ],
