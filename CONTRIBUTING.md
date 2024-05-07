@@ -41,6 +41,8 @@ Asset Handling is described [here](https://vitepress.dev/guide/asset-handling).
 #### Links
 When linking to the latest version of the documentation, use `/latest`, which will be replaced with the current version at build time. It can be followed by a relative path to the file you want to link to (e.g. `/latest/guide.md`).
 
+#### Sidebar
+The sidebar structure is defined in the `sidebar.json` file in each version directory. Syntax is described [here](https://vitepress.dev/reference/default-theme-sidebar).
 
 ### Up and Running
 All of the following commands should be run in the root directory of the project.
