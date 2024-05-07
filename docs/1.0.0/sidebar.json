@@ -8,21 +8,23 @@
     ]
   },
   {
-    "text": "XID generation",
+    "text": "API Integration",
     "collapsed": false,
     "items": [
-      { "text": "How to integrate?", "link": "/how-to-integrate" },
+      { "text": "How to integrate", "link": "/how-to-integrate" },
       { "text": "Generating XID", "link": "/generating-xid" },
       { "text": "Regenerating XID", "link": "/regenerating-xid" },
-      { "text": "Properties", "link": "/properties" }
+      { "text": "Response Codes", "link": "/response-codes" },
+      { "text": "Properties", "link": "/properties" },
+      { "text": "Properties (Optional)", "link": "/optional-properties" }
     ]
   },
   {
-    "text": "Tokenisation",
+    "text": "Bid Stream Integration",
     "collapsed": false,
     "items": [
       { "text": "Tokenisation", "link": "/tokenisation" },
-      { "text": "Bidstream integration", "link": "/bidstream" }
+      { "text": "Passing into Bid Stream", "link": "/bidstream" }
     ]
   }
 ]

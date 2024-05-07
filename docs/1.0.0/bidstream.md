@@ -1,5 +1,5 @@
 Passing Identifier to Bid Stream
---------------------------------
+============
 
 Partner should inject the tokenized (encrypted) xID into the `eids` object of the Bid/Ad Request. This ensures the xID is included in the bidding process, allowing for targeted ad delivery based on the tokenized user ID. It's also recommended to pass **ltid** in the **eids** object.
 
