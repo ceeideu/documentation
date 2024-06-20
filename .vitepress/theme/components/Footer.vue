@@ -4,10 +4,10 @@ const year = new Date().getFullYear();
 
 <template>
   <footer>
-    <section>
-      <a href="/unsubscribe">Usuń swój e-mail z bazy PIR</a>
-      <a href="/polityka-prywatnosci">Polityka prywatności</a>
-      <p>COPYRIGHT &copy; {{ year }} WIRTUALNA POLSKA S.A.</p>
+    <section class="layout-width-content">
+      <a :href="`${$config.homePageUrl}/opt-out`">Opt-out</a>
+      <a :href="`${$config.homePageUrl}/privacy-policy`">Privacy policy</a>
+      <p>COPYRIGHT &copy; {{ year }} Businessclick Sp. z o.o.</p>
     </section>
     <img src="/logo.svg"
          alt="Logo"
@@ -41,8 +41,8 @@ const year = new Date().getFullYear();
       flex-direction: column;
       gap: 0.25rem;
 
-      width: 100%;
-      max-width: var(--content-width);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
 
       position: relative;
       z-index: 1;
@@ -52,12 +52,12 @@ const year = new Date().getFullYear();
       height: 110%;
       position: absolute;
       bottom: -1rem;
-      right: 25%;
+      right: 10%;
       filter: brightness(110%) saturate(0) contrast(250%);
       opacity: .1;
 
-      @media (max-width: var(--breakpoint-md)) {
-        right: 10%;
+      @media (min-width: var(--breakpoint-md)) {
+        right: 25%;
       }
     }
   }
