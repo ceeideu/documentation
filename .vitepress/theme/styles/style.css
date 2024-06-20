@@ -37,6 +37,26 @@
   --vp-nav-bg-color: #151a42;
 }
 
+/* Global styles */
+.layout-width {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.layout-width-content {
+  @extend .layout-width;
+
+  padding: 0 1.5rem;
+
+  @media (min-width: var(--breakpoint-lg)) {
+    padding: 0 5rem;
+  }
+
+  @media (min-width: var(--breakpoint-xl)) {
+    padding: 0 7rem;
+  }
+}
+
 /**
  * Component: Nav
  * -------------------------------------------------------------------------- */
