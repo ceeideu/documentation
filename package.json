@@ -18,6 +18,7 @@
     "nodemon": "3.1.0",
     "postcss": "8.4.38",
     "postcss-at-rules-variables": "0.3.0",
+    "postcss-extend": "1.0.5",
     "postcss-mixins": "10.0.1",
     "postcss-nested": "6.0.1",
     "postcss-simple-vars": "7.0.1",
@@ -30,9 +31,12 @@
       "autoprefixer": {},
       "postcss-mixins": {},
       "postcss-at-rules-variables": {
-        "atRules": [ "media" ]
+        "atRules": [
+          "media"
+        ]
       },
       "postcss-simple-vars": {},
+      "postcss-extend": {},
       "postcss-nested": {}
     }
   }
