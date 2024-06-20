@@ -1,5 +1,5 @@
 {
-  "name": "@pirwppl/documentation",
+  "name": "@ceeideu/documentation",
   "private": "true",
   "scripts": {
     "docs:dev": "nodemon --watch docs -e json --exec 'vitepress dev'",
