@@ -6,18 +6,21 @@ import markdownItReplaceLink from 'markdown-it-replace-link';
 const latestVersion = getLatestVersion();
 const latestVersionEntrypoint = getVersionEntrypoint(latestVersion);
 
+const homePageUrl = 'https://ceeid.eu';
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'CEEID',
+  title: 'CEEId',
   rewrites: {
     'docs/:page+': ':page+',
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    homePageUrl: homePageUrl,
     nav: [
       // { text: 'Home', link: latestVersionEntrypoint },
       { text: 'Docs', link: latestVersionEntrypoint },
-      { text: 'API', link: 'https://pir.wp.pl/playground/swagger/index.html#/' },
+      { text: 'API', link: `${homePageUrl}/playground/swagger/index.html#/` },
     ],
 
     versionSwitcher: {
@@ -36,7 +39,7 @@ export default defineConfig({
     logo: '/logo.svg',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/pirwppl' },
+      { icon: 'github', link: 'https://github.com/ceeideu' },
     ],
   },
   markdown: {
