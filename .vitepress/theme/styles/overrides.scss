@@ -1,0 +1,95 @@
+@import "mixins";
+
+:root {
+  --vp-c-brand-1: var(--color-accent-1);
+  --vp-c-brand-2: var(--color-accent-2);
+  --vp-c-brand-3: var(--color-accent-3);
+  --vp-c-brand-soft: var(--color-accent-soft);
+
+  --vp-nav-logo-height: 2.75rem;
+
+  --vp-nav-bg-color: theme('colors.palette.dark-accent');
+}
+
+/**
+ * Component: Nav
+ * -------------------------------------------------------------------------- */
+
+.VPNavBar {
+  @include text-color-light;
+
+  --vp-c-divider: var(--vp-c-text-3);
+  --vp-c-border: #3c3f44;
+  --vp-input-border-color: var(--vp-c-border);
+
+  background-color: var(--vp-nav-bg-color) !important;
+
+  & > .wrapper > .container {
+    & > .title {
+      width: unset !important;
+      @apply static;
+      @apply pr-0 #{!important};
+
+      & .title {
+        @apply border-b-0 #{!important};
+      }
+    }
+
+    & > .content {
+      @apply pl-0 #{!important};
+    }
+  }
+
+  .divider {
+    @apply pl-0 #{!important};
+  }
+
+  .VPNavBarTitle {
+    --vp-c-text-1: theme('colors.palette.accent');
+
+    .logo {
+      @apply w-7 h-7 mr-1;
+    }
+
+    span {
+      @apply text-2xl font-semibold;
+      --vp-font-family-base: 'Poppins', sans-serif;
+    }
+  }
+
+  .VPNavBarSearch {
+    --vp-c-divider: #e2e2e3;
+
+    .dark & {
+      --vp-c-divider: #2e2e32;
+    }
+
+    @screen md {
+      @include restore-default-text-color;
+    }
+  }
+
+  .VPNavBarMenuGroup,
+  .VPNavBarExtra {
+    & > .menu {
+      @include restore-default-text-color;
+    }
+  }
+}
+
+
+/**
+ * Component: VPSidebar
+ * -------------------------------------------------------------------------- */
+
+.VPSidebar {
+  .VPSidebarItem {
+    &.level-1 {
+      @apply pl-4;
+
+      &.is-active > .item > .indicator {
+        background-color: var(--vp-c-brand-1);
+      }
+    }
+  }
+}
