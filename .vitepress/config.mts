@@ -11,6 +11,7 @@ const homePageUrl = 'https://ceeid.eu';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'CEEId',
+  base: '/documentation/',
   rewrites: {
     'docs/:page+': ':page+',
   },
@@ -42,6 +43,9 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/ceeideu' },
     ],
   },
+  ignoreDeadLinks: [
+    'http://localhost:5173',
+  ],
   markdown: {
     config: (md) => {
       md.use(markdownItReplaceLink);
