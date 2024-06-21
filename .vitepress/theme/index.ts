@@ -2,7 +2,7 @@
 import { h } from 'vue';
 import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
-import './styles/style.css';
+import './styles/style.scss';
 import Footer from './components/Footer.vue';
 
 export default {

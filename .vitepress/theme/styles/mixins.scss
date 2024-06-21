@@ -1,19 +1,19 @@
-@define-mixin text-color-light {
+@mixin text-color-light {
   --vp-c-text-1: var(--color-text-always-light-1);
   --vp-c-text-2: var(--color-text-always-light-2);
   --vp-c-text-3: var(--color-text-always-light-3);
 }
 
-@define-mixin text-color-dark {
+@mixin text-color-dark {
   --vp-c-text-1: var(--color-text-always-dark-1);
   --vp-c-text-2: var(--color-text-always-dark-2);
   --vp-c-text-3: var(--color-text-always-dark-3);
 }
 
-@define-mixin restore-default-text-color {
-  @mixin text-color-dark;
+@mixin restore-default-text-color {
+  @include text-color-dark;
 
   .dark & {
-    @mixin text-color-light;
+    @include text-color-light;
   }
 }

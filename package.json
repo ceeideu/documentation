@@ -1,5 +1,5 @@
 {
-  "name": "@pirwppl/documentation",
+  "name": "@ceeideu/documentation",
   "private": "true",
   "scripts": {
     "docs:dev": "nodemon --watch docs -e json --exec 'vitepress dev'",
@@ -17,23 +17,16 @@
     "markdown-it-replace-link": "1.2.1",
     "nodemon": "3.1.0",
     "postcss": "8.4.38",
-    "postcss-at-rules-variables": "0.3.0",
-    "postcss-mixins": "10.0.1",
-    "postcss-nested": "6.0.1",
-    "postcss-simple-vars": "7.0.1",
+    "sass": "1.77.6",
     "semver": "7.6.0",
+    "tailwindcss": "3.4.4",
     "vitepress": "1.1.3",
     "vue": "3.4.25"
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {},
-      "postcss-mixins": {},
-      "postcss-at-rules-variables": {
-        "atRules": [ "media" ]
-      },
-      "postcss-simple-vars": {},
-      "postcss-nested": {}
+      "tailwindcss": {},
+      "autoprefixer": {}
     }
   }
 }

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "overrides";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Custom variables */
+:root {
+  --color-accent-1: theme('colors.palette.accent');
+  --color-accent-2: #ec9d6a;
+  --color-accent-3: #e6a073;
+  --color-accent-soft: #e1a681;
+
+  --color-text-always-light-1: theme('colors.palette.light-text');
+  --color-text-always-light-2: rgba(255, 255, 245, 0.6);
+  --color-text-always-light-3: rgba(255, 255, 245, 0.38);
+
+  --color-text-always-dark-1: theme('colors.palette.text');
+  --color-text-always-dark-2: rgba(60, 60, 67, 0.78);
+  --color-text-always-dark-3: rgba(60, 60, 67, 0.56);
+
+  --content-width: 688px;
+}
+
+/* Global styles */
+@layer utilities {
+  .layout-width {
+    @apply w-full max-w-7xl;
+  }
+
+  .layout-width-content {
+    @apply layout-width px-6 lg:px-20 xl:px-28;
+  }
+
+  .layout-width-super-slim {
+    @apply layout-width px-6 lg:px-52 xl:px-60;
+  }
+}

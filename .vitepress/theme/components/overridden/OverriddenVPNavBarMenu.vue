@@ -19,14 +19,8 @@ const { theme } = useData();
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .VPNavBarMenu {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .VPNavBarMenu {
-    display: flex;
-  }
+  @apply hidden md:flex;
 }
 </style>
