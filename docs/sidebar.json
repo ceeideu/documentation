@@ -1,3 +1,30 @@
 [
-  { "text": "Technical Guide", "link": "/docs/1.0.0/overview" }
+  {
+    "text": "Introduction",
+    "collapsed": false,
+    "items": [
+      { "text": "Overview", "link": "/1.0.0//overview" },
+      { "text": "Glossary", "link": "/1.0.0//glossary" }
+    ]
+  },
+  {
+    "text": "API Integration",
+    "collapsed": false,
+    "items": [
+      { "text": "How to integrate", "link": "/1.0.0//how-to-integrate" },
+      { "text": "Generating XID", "link": "/1.0.0//generating-xid" },
+      { "text": "Regenerating XID", "link": "/1.0.0//regenerating-xid" },
+      { "text": "Response Codes", "link": "/1.0.0//response-codes" },
+      { "text": "Properties", "link": "/1.0.0//properties" },
+      { "text": "Properties (Optional)", "link": "/1.0.0//optional-properties" }
+    ]
+  },
+  {
+    "text": "Bid Stream Integration",
+    "collapsed": false,
+    "items": [
+      { "text": "Tokenisation", "link": "/1.0.0//tokenisation" },
+      { "text": "Passing into Bid Stream", "link": "/1.0.0//bidstream" }
+    ]
+  }
 ]
