@@ -1,4 +1,4 @@
-# Central and Easter Europe ID (CEEid)
+# Central and Eastern Europe ID (CEEid)
 
 ## Introduction
 - [Overview](/1.0.0/overview)
