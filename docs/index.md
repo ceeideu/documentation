@@ -1,7 +1,5 @@
 # Central and Easter Europe ID (CEEid)
 
-# Technical Guide
-
 ## Introduction
 - [Overview](/1.0.0/overview)
 - [Glossary](/1.0.0/glossary)
