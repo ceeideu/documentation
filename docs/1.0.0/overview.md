@@ -1,10 +1,10 @@
 Overview
 ========
 
-Characteristics of PIR 
+Characteristics of CEEid 
 ---------------------------------------------------------------------------------------
 
-Here are just some of the intended benefits for using **PIR**. You can:
+Here are just some of the intended benefits for using **CEEid**. You can:
 
 -   Upgrade identity of the user with an authenticated and tokenised ID (based on hashed e-mail address).
 -   Remove dependency on third-party cookies.

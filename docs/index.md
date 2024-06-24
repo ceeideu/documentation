@@ -1,4 +1,3 @@
-# Polski Identyfikator Reklamowy (PIR)
+# Central and Easter Europe ID (CEEid)
 
 ![img.png](img.png)
-

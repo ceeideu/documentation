@@ -5,7 +5,7 @@ Partner should inject the tokenized (encrypted) xID into the `eids` object of 
 
 The **eids** object should consist of the following parameters:
 
--   source (it can change in the future): pir.wp.pl
+-   source: ceeid.eu
 -   id: the tokenized value of the **xID** Identifier | atype: 3
 -   id: the tokenized value of the **ltid** Identifier | atype: 1
 

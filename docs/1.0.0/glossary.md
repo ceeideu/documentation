@@ -1,10 +1,10 @@
 Glossary
 ========
 
--   **PIR**: Official short version name for 'Polish Advertising Identifier'.
--   **xID:**: Internal name of our PIR identifier.
--   **PIR ID**: Deterministic identifier of the user used for retargeting and profiling mechanisms.
--   **Token / PIR ID Token:**: Encrypted version of xID
+-   **CEEid**: Official short version name for 'Central and Eastern Europe ID'.
+-   **xID:**: Internal name of our CEEid identifier.
+-   **CEEid ID**: Deterministic identifier of the user used for retargeting and profiling mechanisms.
+-   **Token / CEEid ID Token:**: Encrypted version of xID
 -   **HEM:**: Normalised and encrypted email representation using SHA-256 (Secure Hash Algorithm 256-bit) a cryptographic hash function.
 
 -   **DSP**: DSP stands for Demand-Side Platform. A DSP is a software platform used by advertisers and agencies to purchase digital advertising space in an automated manner. It allows advertisers to buy ad inventory across multiple ad exchanges and publishers through real-time bidding (RTB) and programmatic advertising.
