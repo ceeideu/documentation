@@ -1,15 +1,15 @@
 # Central and Eastern Europe ID (CEEid)
 
 ## Introduction
-- [Overview](/1.0.0/overview)
-- [Glossary](/1.0.0/glossary)
+- [Overview](/latest/overview)
+- [Glossary](/latest/glossary)
 
 ## XID generation
-- [How to integrate?](/1.0.0/how-to-integrate)
-- [Generating XID](/1.0.0/generating-xid)
-- [Regenerating XID](/1.0.0/regenerating-xid)
-- [Properties](/1.0.0/properties)
+- [How to integrate?](/latest/how-to-integrate)
+- [Generating XID](/latest/generating-xid)
+- [Regenerating XID](/latest/regenerating-xid)
+- [Properties](/latest/properties)
 
 ## Tokenisation
-- [Tokenisation](/1.0.0/tokenisation)
-- [Bidstream integration](/1.0.0/bidstream)
+- [Tokenisation](/latest/tokenisation)
+- [Bidstream integration](/latest/bidstream)
