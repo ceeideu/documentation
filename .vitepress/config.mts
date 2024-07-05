@@ -38,7 +38,7 @@ export default defineConfig({
     lastUpdated: true,
 
     logo: '/logo.svg',
-    logoLink: '/',
+    logoLink: 'https://ceeid.eu',
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ceeideu' },
