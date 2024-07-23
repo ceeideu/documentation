@@ -14,7 +14,7 @@ Tokenisation
 
 ### Obtaining X-API-KEY and Authentication
 
-Request access token (**API_KEY**) from CEEid provider administrator to get access to CEEid API. This will allow communication with CEEid API.
+Request access token (**API_KEY**) from CEEId provider administrator to get access to CEEId API. This will allow communication with CEEId API.
 
 Note: API_KEY should never be published or exposed to external vendors nor to public user-land and must be kept privately on a server side.
 
@@ -28,7 +28,7 @@ The keys provided by the "/keys" endpoint change on a weekly basis. It is recom
 
 -   Only Partner's Backend Servers should call **/keys** endpoint
 -   Access **/keys **endpoint with your **x-api-key** token as a request header value.
--   The endpoint lists **keys** that should be used to decrypt CEEid ID token (from the bid-stream) to obtain raw CEEid ID. The first character of the token indicates the key index (1-4) for decryption.
+-   The endpoint lists **keys** that should be used to decrypt CEEId ID token (from the bid-stream) to obtain raw CEEId ID. The first character of the token indicates the key index (1-4) for decryption.
 -   There is always only one key selected as a current encryption key
 -   Keep refreshing keys periodically (once a day)
 -   Keys rotate weekly, with the oldest key being replaced and set as the new encryption key. 

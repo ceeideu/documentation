@@ -2,7 +2,7 @@
 How to integrate
 ----------------
 
-*Disclaimer: the names for the service and for the identifier can be called **CEEid** or **xID** (technical name). It's also possible that the service will change it's name with the scale and number of coalition partners.*
+*Disclaimer: the names for the service and for the identifier can be called **CEEId** or **xID** (technical name). It's also possible that the service will change it's name with the scale and number of coalition partners.*
 
 ##### Prerequisites
 
@@ -16,14 +16,14 @@ The following steps provide a high-level outline of the workflow intended for in
 ##### Background processes:
 
 -   The Advertiser and/or data provider passes first-party and third-party audience segments to the DSP.
--   The DSP syncs with the CEEid Service to receive decryption keys.
--   The DSP refreshes CEEid identifiers using the CEEid Service and upgrades ID Mappings for stored DMP segments.
+-   The DSP syncs with the CEEId Service to receive decryption keys.
+-   The DSP refreshes CEEId identifiers using the CEEId Service and upgrades ID Mappings for stored DMP segments.
 
 ##### Steps for each bid/ad impression:
 
-1.  A bid request is passed into the bid stream with the CEEid ID token.
-2.  The DSP receives the bid request with the CEEid ID token from the bid stream.
+1.  A bid request is passed into the bid stream with the CEEId ID token.
+2.  The DSP receives the bid request with the CEEId ID token from the bid stream.
 3.  The DSP:
-    -   Decrypts the CEEid ID token into a raw CEEid ID.
-    -   Matches the raw CEEid ID to an audience segment.
+    -   Decrypts the CEEId ID token into a raw CEEId ID.
+    -   Matches the raw CEEId ID to an audience segment.
 4.  The DSP sends a personalised bid response to the bid stream.
