@@ -1,4 +1,4 @@
-# CEEid
+# CEEId
 
 ## Introduction
 - [Overview](/latest/overview)

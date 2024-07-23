@@ -1,10 +1,10 @@
 Overview
 ========
 
-Characteristics of CEEid 
+Characteristics of CEEId 
 ---------------------------------------------------------------------------------------
 
-Here are just some of the intended benefits for using **CEEid**. You can:
+Here are just some of the intended benefits for using **CEEId**. You can:
 
 -   Upgrade identity of the user with an authenticated and tokenised ID (based on hashed e-mail address).
 -   Remove dependency on third-party cookies.
