@@ -31,9 +31,11 @@ const target = computed(() =>
 
 // Hack to make external links work in VitePress.
 // VitePress tries to handle the navigation by Vue Router if the domain is the same, even if the destination is outside the VitePress site.
-function navigate() {
+function navigate(event: Event) {
   const url = link.value ?? normalizeLink(currentLang.value.link);
   if (target.value === '_blank') {
+    event.preventDefault();
+    event.stopImmediatePropagation();
     window.open(url, '_blank');
     return;
   }

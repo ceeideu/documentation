@@ -8,8 +8,10 @@ const year = new Date().getFullYear();
 
 // Hack to make external links work in VitePress.
 // VitePress tries to handle the navigation by Vue Router if the domain is the same, even if the destination is outside the VitePress site.
-function navigate(url: string, target?: string) {
+function navigate(event: Event, url: string, target?: string) {
   if (target === '_blank') {
+    event.preventDefault();
+    event.stopImmediatePropagation();
     window.open(url, '_blank');
     return;
   }
@@ -25,12 +27,12 @@ const privacyPolicyUrl = 'https://www.businessclick.com/documents/Privacy_Policy
   <footer>
     <section class="layout-width-content">
       <a :href="privacyCenterUrl"
-         @click="navigate(privacyCenterUrl)">
+         @click="(e) => navigate(e, privacyCenterUrl)">
         Privacy center
       </a>
       <a :href="privacyPolicyUrl"
          target="_blank"
-         @click="navigate(privacyPolicyUrl, '_blank')"l>
+         @click="(e) => navigate(e, privacyPolicyUrl, '_blank')"l>
         Privacy policy
       </a>
       <p>COPYRIGHT &copy; {{ year }} Businessclick Sp. z o.o.</p>
