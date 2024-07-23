@@ -38,7 +38,7 @@ export default defineConfig({
     lastUpdated: true,
 
     logo: '/logo.svg',
-    logoLink: 'https://ceeid.eu',
+    logoLink: homePageUrl,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ceeideu' },
@@ -64,6 +64,12 @@ export default defineConfig({
           find: /^.*\/VPNavBarMenu\.vue$/,
           replacement: fileURLToPath(
             new URL('./theme/components/overridden/OverriddenVPNavBarMenu.vue', import.meta.url)
+          ),
+        },
+        {
+          find: /^.*\/VPNavBarTitle\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./theme/components/overridden/OverriddenVPNavBarTitle.vue', import.meta.url)
           ),
         },
       ],
