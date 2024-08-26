@@ -4,6 +4,7 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import './styles/style.scss';
 import Footer from './components/Footer.vue';
+import { WPJSLibSPAHandlers } from '../wpjslib';
 
 export default {
   extends: DefaultTheme,
@@ -14,6 +15,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
+    // These properties will be available only in templates???
     Object.defineProperties(app.config.globalProperties, {
       $config: {
         get() {
@@ -27,5 +29,13 @@ export default {
         },
       },
     });
+
+    const { startView, endView } = WPJSLibSPAHandlers();
+    router.onBeforePageLoad = () => {
+      startView();
+    };
+    router.onBeforeRouteChange = () => {
+      endView();
+    };
   },
 } satisfies Theme

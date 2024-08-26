@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 import { getLatestVersion, getVersionsSidebars, getVersionEntrypoint, getVersionSwitchMenu } from './version-switcher/index.mts';
 import { fileURLToPath, URL } from 'node:url';
 import markdownItReplaceLink from 'markdown-it-replace-link';
+import { WPJSLibScripts } from './wpjslib';
 
 const latestVersion = getLatestVersion();
 const latestVersionEntrypoint = getVersionEntrypoint(latestVersion);
@@ -15,6 +16,9 @@ export default defineConfig({
   rewrites: {
     'docs/:page+': ':page+',
   },
+  head: [
+    ...WPJSLibScripts(),
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     homePageUrl: homePageUrl,
