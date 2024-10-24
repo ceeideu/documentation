@@ -18,7 +18,10 @@ x-api-key: d728ef68-92d3-4b2e-bb4f-1f1259a6a972
   "type": "hex",
   "value": "3094c65c0dfe352399f58313d1438ff078497e8efacf368a7f9d9189a28bffb7",
   "properties": {
-   "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",    "referer": "https://example.com/",   "ip": "0.0.0.0"
+    "consent": "true",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+    "referer": "https://example.com/",
+    "ip": "0.0.0.0"
   }
 }
 
