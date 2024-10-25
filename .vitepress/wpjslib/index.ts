@@ -43,7 +43,7 @@ export function WPJSLibSPAHandlers() {
   return {
     startView: () => {
       if (typeof window === 'undefined') return;
-      window.WP?.spa.viewPage({
+      window.WP?.spa?.viewPage({
         dot: {
           ctype: 'documentation',
         }
@@ -51,7 +51,7 @@ export function WPJSLibSPAHandlers() {
     },
     endView: () => {
       if (typeof window === 'undefined') return;
-      window.WP?.spa.closePage();
+      window.WP?.spa?.closePage();
     },
   };
 }
