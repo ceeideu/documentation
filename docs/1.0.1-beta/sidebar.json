@@ -1,0 +1,94 @@
+[
+  {
+    "text": "Introduction",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "Overview",
+        "link": "/overview"
+      },
+      {
+        "text": "Glossary",
+        "link": "/glossary"
+      }
+    ]
+  },
+  {
+    "text": "Integration guides",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "Requirements",
+        "link": "/requirements"
+      },
+      {
+        "text": "Publisher integration",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "Introduction",
+            "link": "/publisher-introduction"
+          },
+          {
+            "text": "Prebid Integration for Publishers",
+            "link": "/prebid-integration-for-publishers"
+          },
+          {
+            "text": "Server-Side",
+            "link": "/publisher-server-side"
+          }
+        ]
+      },
+      {
+        "text": "DSP integration",
+	"collapsed": false,
+        "items": [
+          {
+            "text": "Introduction",
+            "link": "/dsp-introduction"
+          },
+          {
+            "text": "DSP Integration Guide",
+            "link": "/dsp-integration-guide"
+          }
+        ]
+      },
+      {
+        "text": "Advertiser integration",
+	"collapsed":false,
+        "items": [
+          {
+            "text": "Introduction",
+            "link": "/advertiser-introduction"
+          }
+        ]
+      },
+      {
+        "text": "Token Decryption Guide",
+        "link": "/token-decryption-guide"
+      },
+      {
+        "text": "Obtaining and Encrypting CEEId Identifiers",
+        "link": "/obtaining-and-encrypting-ceeid"
+      },
+      {
+        "text": "Encrypting xID into CEEId Token",
+        "link": "/encrypting-xid-into-ceeid-token"
+      }
+    ]
+  },
+  {
+    "text": "Bid Stream Integration",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "Tokenisation",
+        "link": "/tokenisation"
+      },
+      {
+        "text": "Passing into Bid Stream",
+        "link": "/bidstream"
+      }
+    ]
+  }
+]
