@@ -1,0 +1,1 @@
+Before integration, companies seeking to partner with CEEId must initiate contact with our team to obtain an API token. This token grants secure access to our platform, enabling system integration and token management functionalities. For further details on partnership initiation and token issuance, please reach out to our support team.
