@@ -25,7 +25,7 @@ export default defineConfig({
     nav: [
       // { text: 'Home', link: latestVersionEntrypoint },
       { text: 'Docs', link: latestVersionEntrypoint },
-      { text: 'API', link: `${homePageUrl}/playground/swagger/index.html#/` },
+      { text: 'API', link: `${homePageUrl}/swagger` },
     ],
 
     versionSwitcher: {
