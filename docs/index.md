@@ -4,12 +4,12 @@
 - [Overview](/latest/overview)
 - [Glossary](/latest/glossary)
 
-## XID generation
-- [How to integrate?](/latest/how-to-integrate)
-- [Generating XID](/latest/generating-xid)
-- [Regenerating XID](/latest/regenerating-xid)
-- [Properties](/latest/properties)
+## Integrations
+- [Publisher](/latest/publisher-introduction.md)
+- [DSP](/latest/dsp-introduction.md)
+- [Advertiser](/latest/advertiser-introduction.md)
 
-## Tokenisation
-- [Tokenisation](/latest/tokenisation)
-- [Bidstream integration](/latest/bidstream)
+## Guides 
+- [Token Decryption Guide](/latest/token-decryption-guide.md)
+- [Obtaining and Encrypting CEEId Identifiers](/latest/obtaining-and-encrypting-ceeid.md)
+- [Encrypting xID into CEEId Token](/latest/encrypting-xid-into-ceeid-token.md)

@@ -8,7 +8,7 @@ CEEId provides a secure and privacy-centric method for DSPs to access anonymized
    CEEId enables DSPs to receive encrypted user identifiers (xID) that are unique to each user and tied to their interactions across publisher sites. This supports precise user matching and bidding strategies.
 
 2. **Privacy Compliance**  
-   CEEId is designed to align with privacy regulations, supporting encrypted identifiers, consent management, and regular key refreshes. DSPs can confidently handle user data in compliance with GDPR, CCPA, and other data protection laws.
+   CEEId is designed to align with privacy regulations, supporting encrypted identifiers, consent management, and regular key refreshes. DSPs can confidently handle user data in compliance with GDPR and other data protection laws.
 
 3. **Real-Time Bidding (RTB) Compatibility**  
    Integrated within the programmatic ecosystem, CEEId tokens can be decrypted and used seamlessly within real-time bidding (RTB) environments, simplifying user identification across DSP platforms and maximizing ad targeting capabilities.
