@@ -7,4 +7,4 @@
    Generate an xID by calling the `/xid/generate` endpoint, passing in the DII as required.
 
 3. **xID Encryption**  
-   [Encrypt](./encrypting-xid-into-ceeid-token.md) the xID using the designated encryption method. This generates a secure CEEId token, which can then be stored as needed.
+   [Encrypt](/1.0.0/encrypting-xid-into-ceeid-token.md) the xID using the designated encryption method. This generates a secure CEEId token, which can then be stored as needed.
