@@ -7,7 +7,7 @@
    Upon obtaining Directly Identifiable Information (DII) (e.g., email or phone number), submit it to the `/xid/generate` endpoint. This returns the `xID` identifier associated with the user.
 
 3. **xID Encryption**  
-   [Encrypt](./encrypting-xid-into-ceeid-token.md) the xID using the designated encryption method. This generates the secure CEEId token.
+   [Encrypt](/1.0.0/encrypting-xid-into-ceeid-token.md) the xID using the designated encryption method. This generates the secure CEEId token.
 
 4. **Token Storage**  
    Store the CEEId token (e.g., in a cookie such as `ceeid-token`) for subsequent use.
