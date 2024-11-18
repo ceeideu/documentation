@@ -10,21 +10,21 @@
         "items": [
           {
             "text": "Publisher",
-            "link": "/publisher-overview"
+            "link": "/1.0.0/publisher-overview"
           },
           {
             "text": "DSP",
-            "link": "/dsp-overview-under-contruction" 
+            "link": "/1.0.0/dsp-overview-under-contruction" 
           },
           {
             "text": "Advertiser",
-            "link": "/advertiser-overview-under-contruction"
+            "link": "/1.0.0/advertiser-overview-under-contruction"
           }
         ]
       },
       {
         "text": "Glossary",
-        "link": "/glossary"
+        "link": "/1.0.0/glossary"
       }
     ]
   },
@@ -34,7 +34,7 @@
     "items": [
       {
         "text": "Requirements",
-        "link": "/requirements"
+        "link": "/1.0.0/requirements"
       },
       {
         "text": "Publisher integration",
@@ -42,15 +42,15 @@
         "items": [
           {
             "text": "Introduction",
-            "link": "/publisher-introduction"
+            "link": "/1.0.0/publisher-introduction"
           },
           {
             "text": "Prebid Integration for Publishers",
-            "link": "/prebid-integration-for-publishers"
+            "link": "/1.0.0/prebid-integration-for-publishers"
           },
           {
             "text": "Server-Side",
-            "link": "/publisher-server-side"
+            "link": "/1.0.0/publisher-server-side"
           }
         ]
       },
@@ -60,11 +60,11 @@
         "items": [
           {
             "text": "Introduction",
-            "link": "/dsp-introduction"
+            "link": "/1.0.0/dsp-introduction"
           },
           {
             "text": "DSP Integration Guide",
-            "link": "/dsp-integration-guide"
+            "link": "/1.0.0/dsp-integration-guide"
           }
         ]
       },
@@ -74,25 +74,25 @@
         "items": [
           {
             "text": "Introduction",
-            "link": "/advertiser-introduction"
+            "link": "/1.0.0/advertiser-introduction"
           },
           {
             "text": "Advertiser Integration Guide",
-            "link": "/advertiser-integration-guide"
+            "link": "/1.0.0/advertiser-integration-guide"
           }
         ]
       },
       {
         "text": "Token Decryption Guide",
-        "link": "/token-decryption-guide"
+        "link": "/1.0.0/token-decryption-guide"
       },
       {
         "text": "Obtaining and Encrypting CEEId Identifiers",
-        "link": "/obtaining-and-encrypting-ceeid"
+        "link": "/1.0.0/obtaining-and-encrypting-ceeid"
       },
       {
         "text": "Encrypting xID into CEEId Token",
-        "link": "/encrypting-xid-into-ceeid-token"
+        "link": "/1.0.0/encrypting-xid-into-ceeid-token"
       }
     ]
   }
