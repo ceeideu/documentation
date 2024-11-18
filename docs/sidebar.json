@@ -14,11 +14,7 @@
           },
           {
             "text": "DSP",
-            "link": "/1.0.0/dsp-overview-under-contruction" 
-          },
-          {
-            "text": "Advertiser",
-            "link": "/1.0.0/advertiser-overview-under-contruction"
+            "link": "/1.0.0/dsp-overview" 
           }
         ]
       },
