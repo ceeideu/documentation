@@ -18,9 +18,9 @@ pbjs.setConfig({
         refreshInSeconds: 360
       },
       params: {
-        partnerId: '123',  // Replace with your assigned partner ID
-        type: 'hex',       // Token format (e.g., 'hex' or 'base64')
-        value: '3094c65c0dfe352399f58313d1438ff078497e8efacf368a7f9d9189a28bffb7' // Optional static token for testing
+        partnerId: '123',         // Replace with your assigned partner ID
+        type: 'email_hash',       // Specify the type of identifier
+        value: 'b2f0db1687bcf76934a423b42c3e7c3b76ab72046afda7f71f4be19ddc843589', 
       }
     }]
   }

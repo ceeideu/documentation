@@ -108,7 +108,7 @@ Embed the following script block in the `<head>` of your webpage:
 
   CEEID.init({
     partnerId: '123', // Replace with your assigned partner ID
-    value: { type: 'cookie', name: 'hex' },
+    value: { type: 'cookie', name: 'email_hash' },
     consent: { type: 'cookie', name: 'consent' },
     destination: { type: 'cookie', name: 'ceeidToken' },
     onError(error) {
