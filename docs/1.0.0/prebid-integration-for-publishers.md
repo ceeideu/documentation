@@ -32,8 +32,3 @@ pbjs.setConfig({
 - **Expiration**: The cookie is valid for 7 days.
 - **Refresh**: A new token will be fetched automatically every 360 seconds.
 
----
-
-## 🧪 Testing
-
-To test the integration manually, append `?testrequest=1` to the page URL. This flag is internally recognized and may help validate local or staging setups.
