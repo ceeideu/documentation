@@ -1,10 +1,39 @@
-### **Prebid Integration for Publishers**
+# Prebid.js Integration for Publishers
 
-1. **Install the CEEId Prebid Module**  
-   Publishers should install the [CEEId Prebid module](https://docs.prebid.org/dev-docs/modules/userid-submodules/ceeIdSystem.html), which facilitates the secure handling of user identifiers during bidding.
+This guide describes how to configure the `ceeId` user ID module in Prebid.js using the `userIds` array. This configuration enables client-side identity resolution using ceeId tokens.
 
-2. **Configure Token Location**  
-   Configure the module to recognize where the CEEId tokens are stored (e.g., a cookie like `ceeid-token`).
+## Configuration
 
-3. **Automated Token Transmission**  
-   Once configured, the CEEId module will automatically send tokens in the `EIDs` field of each bid request, streamlining identity transmission during ad auctions.
+Add the `ceeId` entry to the `userSync.userIds` array in your Prebid.js setup:
+
+```javascript
+pbjs.setConfig({
+  userSync: {
+    userIds: [{
+      name: 'ceeId',
+      storage: {
+        type: 'cookie',
+        name: 'ceeIdToken',
+        expires: 7,
+        refreshInSeconds: 360
+      },
+      params: {
+        partnerId: '123',  // Replace with your assigned partner ID
+        type: 'hex',       // Token format (e.g., 'hex' or 'base64')
+        value: '3094c65c0dfe352399f58313d1438ff078497e8efacf368a7f9d9189a28bffb7' // Optional static token for testing
+      }
+    }]
+  }
+});
+```
+## Token Behavior
+
+- **Storage**: The token is stored as a cookie named `ceeIdToken`.
+- **Expiration**: The cookie is valid for 7 days.
+- **Refresh**: A new token will be fetched automatically every 360 seconds.
+
+---
+
+## 🧪 Testing
+
+To test the integration manually, append `?testrequest=1` to the page URL. This flag is internally recognized and may help validate local or staging setups.

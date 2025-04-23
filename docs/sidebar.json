@@ -41,8 +41,12 @@
             "link": "/1.0.0/publisher-introduction"
           },
           {
-            "text": "Prebid Integration for Publishers",
+            "text": "Prebid",
             "link": "/1.0.0/prebid-integration-for-publishers"
+          },
+          {
+            "text": "Standalone",
+            "link": "/1.0.0/standalone-integration-for-publishers"
           },
           {
             "text": "Server-Side",
